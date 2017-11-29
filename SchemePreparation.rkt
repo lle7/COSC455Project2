@@ -1,5 +1,13 @@
 #lang racket
 "--------Example-----------"
+(define mylist(list 1 2 3 4))
+(car mylist);get the head of the list 
+(cdr mylist);get the tail of the list
+(car (cdr mylist));get the head of the tail of the last list
+(cadr mylist);same thing as the previous, get the head of the tail but shorter verison
+(car (cdr (cdr (cdr mylist))));get the last element in the list 
+(cadddr mylist); get the last element 
+
 (define alist'())
 (define anotherlist'(a b c))
 (set! alist(cons (car anotherlist) alist))
