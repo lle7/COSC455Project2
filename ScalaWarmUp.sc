@@ -78,7 +78,7 @@ def primeNum (n: Int ) : List[Int] = {
 }
 def goldBachDemo(n: Int, primeList : List[Int]) : Unit ={
     primeList.contains(n-primeList.head) match {
-        case true => println(primeList.head + " + " + (n - primeList.head) + " = " + n)
+        case true => println(n+ " = " + primeList.head + " + " + (n - primeList.head))
         case false => goldBachDemo(n, primeList.tail)
     }
 }
@@ -90,10 +90,10 @@ def goldBach(n : Int ) = {
         case (true, true) => print("Number must be greater than 2!!!")
     }
 }
-goldBach(-1)
+goldBach(-1) //Number is not even and not greater than 2!!!
 goldBach(2)//Number must be greater than 2!!!res4: Unit = ()
 goldBach(3)//Number is not even!!!res5: Unit = ()
-goldBach(4)
+goldBach(4) //4 = 2 + 2
 goldBach(28)//28 = 5 + 23
 
 
