@@ -1,7 +1,7 @@
-
+//String list to be translate later 
 val chinese: List[String] = List("ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba", "jiu", "shi")
 val english: List[String] = List("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")
-
+//test cases
 val test1: List[String] = List("yi", "nine", "six", "ba")
 val test2: List[String] = List("one", "nine", "six", "eight")
 val test3 : List[String] = List("yi", "Josh", "three", "si")
@@ -75,9 +75,15 @@ def go(alist : List[String]): Unit ={
 
 }
 
-go(test1)
-go(test2)
-go(test3)
+go(test1) //Translation 1 9 6 8
+          //Addition: 1 + 9 + 6 + 8 = 24
+          //Multiplication: 1 * 9 * 6 * 8 = 432
+go(test2) //Translation 1 9 6 8
+          // Addition: 1 + 9 + 6 + 8 = 24
+          //Multiplication: 1 * 9 * 6 * 8 = 432
+go(test3) //Translation 1 3 4
+          //Addition: 1 + 3 + 4 = 8
+          //Multiplication: 1 * 3 * 4 = 12
 
 
 
